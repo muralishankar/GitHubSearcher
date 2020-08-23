@@ -1,0 +1,46 @@
+
+.App-pannel{
+    display: flex;
+    flex-direction:column;
+    align-items:stretch;
+    margin-left:15px;
+    margin-top: 10px;
+    text-align:left;
+  }
+  .Search-form{
+    height: 50px;
+    margin-top: 25px;
+  }
+  .Search-form input {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    height: 35px;
+    min-width: 350px;
+    text-indent: 5px;
+    color: rgb(169,169,169);
+    font-size: 15px;
+  }
+  .Search-form input::placeholder {
+    color: rgb(169,169,169);
+  }
+  .Search-form select {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    height: 37px;
+    margin-left: 15px;
+    width: 120px;
+    text-indent: 3px;
+    color: rgb(169,169,169);
+    font-size: 15px;
+  }
+  
+  .App-pannel .App-name{
+    font-size:20px;
+    font-weight: bold;
+  }
+  .App-pannel .App-description{
+    color:#9d9d9d;
+    font-weight: 500;
+  }
