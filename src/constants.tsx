@@ -1,0 +1,4 @@
+
+export enum searchState {
+    INIT = "INIT", LOADING = "LOADING", ERROR = "ERROR", SEARCH_COMPLETED = "SEARCH_COMPLETED"
+};

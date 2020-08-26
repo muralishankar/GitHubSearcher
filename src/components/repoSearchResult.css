@@ -1,0 +1,42 @@
+.repo-item-container
+  {
+    min-width: 300px;
+    height: 150px;
+    background-color: #c4c4c4; 
+    margin: 0 50px 50px 0; 
+    display: flex;
+    flex-direction: column;
+  }
+  .repo-item-container .repo-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .repo-item-container .repo-info-item {
+    margin-left: 15px;
+    flex-direction: row;
+    display: flex;
+    margin-top: 7px;
+  }
+  .repo-item-container .repo-info-item .lable
+  {
+    font-weight: 500;
+    width: 100px;
+  }
+  .repo-item-container .repo-info-item .value{
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:170px}
+  .repo-item-container .repo-link input {
+    height: 30px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .not-found{
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 35px;
+  }

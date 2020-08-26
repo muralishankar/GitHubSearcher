@@ -44,3 +44,22 @@
     color:#9d9d9d;
     font-weight: 500;
   }
+  .result-container {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    user-select: none;
+}
+
+.result-container .result-container-state{
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 35px;
+}
+@media  (max-width: 720px) {
+  .result-container {
+    min-width: 720px;
+  }
+}

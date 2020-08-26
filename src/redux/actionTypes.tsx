@@ -1,2 +1,5 @@
-export const ADD_SEARCH = "ADD_TODO";
-export const CLEAN_SEARCH = "CLEAN_SEARCH";
+export const SET_INIT = "SET_INIT";
+export const SET_SEARCH_COMPLETED = "SET_SEARCH_COMPLETED";
+export const SET_SEARCH_FAILED="SET_SEARCH_FAILED";
+export const SET_LOADING="SET_LOADING";
+export const ADD_SEARCH_INDEX="ADD_SEARCH_INDEX";

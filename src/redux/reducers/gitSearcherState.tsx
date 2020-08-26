@@ -1,22 +1,31 @@
-import { ADD_SEARCH,CLEAN_SEARCH } from "../actionTypes";
+import { SET_INIT, SET_LOADING, SET_SEARCH_COMPLETED, SET_SEARCH_FAILED } from "../actionTypes";
+import { searchState } from '../../constants';
 
 const initialState = {
-  searchItems: [],
+  stateOfSearch: searchState.INIT,
 };
 
-export default function(state = initialState, action) {
+export default function (state = initialState, action) {
   switch (action.type) {
-    case ADD_SEARCH: {
-      const { searchItems  } = action.payload;
+    case SET_INIT: {
+      return { ...state, stateOfSearch: searchState.INIT };
+    }
+    case SET_LOADING: {
       return {
         ...state,
-        searchItems
+        stateOfSearch: searchState.LOADING
       };
     }
-    case CLEAN_SEARCH: {
+    case SET_SEARCH_COMPLETED: {
       return {
         ...state,
-        searchItems:[]
+        stateOfSearch: searchState.SEARCH_COMPLETED
+      };
+    }
+    case SET_SEARCH_FAILED: {
+      return {
+        ...state,
+        stateOfSearch: searchState.ERROR
       };
     }
     default:

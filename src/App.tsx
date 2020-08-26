@@ -5,25 +5,24 @@ import {
   Route,
   useParams
 } from "react-router-dom";
-import GitHubSearcher from './GitHubSearcher';
-import './App.css';
+import GitHubSearcher from './containers/gitHubSearcher';
+import './app.css';
 
 
 function App() {
   return (
     <Router>
-
       <Switch>
-        <Route path="/:id" children={<Child />} />
+        <Route path="/:type" children={<Child />} />
         <Route children={<Child />} />
       </Switch>
     </Router>
   );
 }
 function Child() {
-  let { id } = useParams();
+  let { type } = useParams();
   return (
-    <GitHubSearcher id={id}></GitHubSearcher>
+    <GitHubSearcher type={type}></GitHubSearcher>
   );
 }
 export default App;

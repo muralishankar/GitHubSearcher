@@ -1,0 +1,32 @@
+.user-item-container
+  {
+    min-width: 300px;
+    height: 150px;
+    background-color: #c4c4c4; 
+    margin: 0 50px 50px 0; 
+    display: flex;
+  }
+  .user-item-container .profile-avatar{
+    padding: 25px 15px;
+  }
+  .user-item-container .profile-details{
+    padding: 40px 5px; 
+  }
+  .user-item-container .profile-details .profile-name{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px; 
+    user-select: none;
+    color: white;
+    text-align:center;
+  }
+  .user-item-container .profile-details .profile-link{
+    padding: 15px 30px
+  }
+  
+  .not-found{
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 35px;
+  }
